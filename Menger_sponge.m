@@ -2,7 +2,7 @@ function [V, T] = Menger_sponge(nb_it, printable_ready, option_display)
 %% Menger_sponge : function to compute, display, and save
 % the Sierpinski-Menger sponge at any iteration / depth level.
 %
-% Author & support : nicolas.douillet (at) free.fr, 2019-2020.
+% Author : nicolas.douillet9 (at) gmail.com, 2019-2024.
 %
 %
 % Syntax
@@ -118,7 +118,7 @@ p = 0;
 
 while p ~= nb_it 
     
-    new_C_array = repmat(C, [1 1 18]);
+    new_C_array = repmat(C, [1 1 20]);
     
     for j = 1 : size(C,3)
         
@@ -160,7 +160,7 @@ if ~printable_ready
     
 end
 
-% Display
+%% Display
 if option_display
     
     cmap = [1 1 0];
@@ -452,7 +452,7 @@ end % cube
 %% Squares to triangles conversion subfunction
 function [V, T] = squares2triangles(C)
 %
-% Author & support : nicolas.douillet (at) free.fr, 2017-2020.
+% Author : nicolas.douillet9 (at) gmail.com, 2017-2024.
 %
 % Split struct array into two arrays : vertices & facets
 
@@ -494,7 +494,7 @@ end % squares2triangles
 %% Display subfunction
 function [] = disp_Menger_sponge(V, T, cmap)
 %
-% Author & support : nicolas.douillet (at) free.fr, 2017-2020.
+% Author : nicolas.douillet9 (at) gmail.com, 2017-2024.
 
 figure;
 set(gcf,'Color',[0 0 0]), set(gca,'Color',[0 0 0]);

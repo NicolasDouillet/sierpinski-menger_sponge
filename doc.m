@@ -3,7 +3,7 @@
 % Function to compute, display, and save the
 % Sierpinski-Menger sponge at any iteration / depth level.
 %
-% Author & support : nicolas.douillet (at) free.fr, 2019-2020.
+% Author : nicolas.douillet9 (at) gmail.com, 2019-2024.
 %
 %% Syntax
 %
